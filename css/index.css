@@ -1,0 +1,79 @@
+@media screen and (min-width: 480px) {
+body {
+    background-color: #505050;
+    color: lightgrey;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.about {
+    background-color: #2c2c36;
+    color: #e5abf1;
+}
+
+.experienceList {
+    background-color: #2c2c36;
+    color: #E5ABF1;
+}
+
+.skillsList {
+    background-color: #2c2c36;
+    color: #E5ABF1;
+}
+
+.connectList {
+    background-color: #2c2c36;
+    color: #e5abf1;
+}
+
+input[name="usersName"] {
+    background: #2c2c36;
+    color: #e5abf1;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+input[name="usersEmail"] {
+    background: #2c2c36;
+    color: #e5abf1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea[name="usersMessage"] {
+    background: #2c2c36;
+    color: #e5abf1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit{
+    background: #613583;
+    color: #f9f06b;
+}
+
+footer {
+    background-color: #613583;
+    color: #f9f06b;
+    width: 15%;
+}
+
+}

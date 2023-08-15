@@ -2,7 +2,11 @@
 <head>
   <title>
     Jane Vazquez
-    </title>
+  </title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -12,47 +16,56 @@
 
 
 
-<section>   
+
+ <section id="about">   
 <h1>About</h1>
 
-<p>I am a 31 year old woman who loves cooking and video games.</p>
+<div class="about">
+  <p>I am a 31 year old woman who loves cooking and video games.</p>
+  </div>
 </section>
-<section>
+<section id="experience">
 <h1>Experience</h1>
 
+<div class="experienceList">
 <ul>
 <li>Denny's</li>
 <li>King David Towers</li>
 <li>Starbucks</li>
 </ul>
+</div>
 </section>
 <section id="skills">
-  <h2>Skills</h2>
-  <ul> </ul>
-  
+  <h1>Skills</h1>
+  <div class="skillsList">
+  <ul>   </ul>
+  </div>
   </section>
 
-  <section>
+  <section id="connect">
     <h1>Connect</h1>
-  
+  <div class="connectList">
 <ul>
 <li>Email: janevazquez314@gmail.com</li>
 <li>github: https://github.com/critakara</li>
 </ul>
+</div>
   </section>
 
-  <section>
+  <section id="guestInput">
     <h2>Leave a Message</h2>
     <form name="leave_message">
-      <input type="text" name="usersName" required="true"><br>
-      <input type="email" name="usersEmail" required="true"><br>
-      <textarea name="usersMessage" required="true"></textarea><br>
-	<button type="submit">Submit</button>
+      <input type="text" name="usersName" placeholder="name" required="true"><br>
+      <input type="email" name="usersEmail" placeholder="email" required="true"><br>
+      <textarea name="usersMessage" placeholder="Message" required="true"></textarea><br>
+	<button class="submit" type="submit">Submit</button>
       </form>
   </section>
   <section id="messages">
     <h2>Messages</h2>
-    <ul></ul>
+	<div id="messageList">
+      <ul>  </ul>
+</div>
       </section>
 <footer>
 <script src=js/index.js></script>

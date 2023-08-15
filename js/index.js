@@ -22,6 +22,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
+// ok so I'll need to inject the css dynamically via here i believe
 var messageForm = document.querySelector("[name='leave_message']");
 messageForm.addEventListener("submit", (submit) => {
     submit.preventDefault();
@@ -41,6 +42,7 @@ messageForm.addEventListener("submit", (submit) => {
     // '<a href="mailto: ' + email + '"> ' + name + '</a> <span>' + message + '</span>'
 				
     var removeButton = document.createElement('button');
+    removeButton.setAttribute('id', 'messageRemove');
     removeButton.innerHTML = "remove"
     
     function removeMessage() {
@@ -52,6 +54,15 @@ messageForm.addEventListener("submit", (submit) => {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     messageForm.reset();
+    let head = document.querySelector('head');
+    let css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    css.href = 'css/style.css';
+
+    head.appendChild(css);
 }
 
-);
+			    )
+
+
