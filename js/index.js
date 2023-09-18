@@ -65,24 +65,27 @@ messageForm.addEventListener("submit", (submit) => {
 
 			    )
 
-var githubRequest = new XMLHttpRequest();
+fetch("https://api.github.com/users/critakara/repos", {mode: 'cors'})
+    .then(function(response) {
+	return response.json();
+    })
+    .then(function(data) {
+	console.log(data);
 
-githubRequest.open("GET", "https://api.github.com/users/critakara/repos", true);
-githubRequest.send();
-
-function getRepos() {
-    var repositories = JSON.parse(this.response);
-    console.log(repositories);
-
-    projectSection = document.getElementById("projects");
-    projectList = projectSection.querySelector('ul');
-
-    for(let i = 0; i < repositories.length; i++) {
-	var project = document.createElement('li');
+	var repositories = data;
 	
-	project.innerHTML = repositories[i].name;
-	projectList.appendChild(project);
-    }
-}
 
-githubRequest.addEventListener("load", getRepos, false);
+		projectSection = document.getElementById("projects");
+	projectList = projectSection.querySelector('ul');
+
+	for(let i = 0; i < repositories.length; i++) {
+	    var project = document.createElement('li');
+	
+	    project.innerHTML = repositories[i].name;
+	    projectList.appendChild(project);
+	}
+    });
+   
+	
+
+
