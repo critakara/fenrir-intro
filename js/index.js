@@ -11,10 +11,9 @@ var copyright = document.createElement('p');
 copyright.innerHTML = 'Jane Vazquez ' + thisYear;
 footer.appendChild(copyright);
 
-// this all seems really unnecessary to be here specifically and really seems like a thin you'd just place statically
-// var skills = ["cooking", "javascript", "writing"];
-// var skillsSection = document.getElementById("skills");
-// var skillsList = skillsSection.querySelector('ul');
+var skills = ["cooking", "javascript", "writing"];
+var skillsSection = document.getElementById("skills");
+var skillsList = skillsSection.querySelector('ul');
 
 for (let i = 0; i < skills.length; i++) {
     var skill = document.createElement('li'); // why is it document instead of the specific element?
@@ -43,7 +42,7 @@ messageForm.addEventListener("submit", (submit) => {
 				
     var removeButton = document.createElement('button');
     removeButton.setAttribute('id', 'messageRemove');
-    removeButton.innerHTML = "remove"
+    removeButton.innerHTML = "Remove"
     
     function removeMessage() {
 	let entry = removeButton.parentNode;
@@ -84,6 +83,14 @@ fetch("https://api.github.com/users/critakara/repos", {mode: 'cors'})
 	    project.innerHTML = repositories[i].name;
 	    projectList.appendChild(project);
 	}
+
+	let head = document.querySelector('head');
+    let css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    css.href = 'css/index.css';
+
+    head.appendChild(css);
     });
    
 	
