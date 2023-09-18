@@ -1,9 +1,30 @@
-#messageList {
+.messageListParent {
+    font-size: 18px;
+}
+
+.messageListChild {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    height: 100px;
+}
+
+.messageListChild li {
+    width: 23%;
+    height: 48px;
+    margin: 1px 1%;
+    text-align: center;
     background-color: #2c2c36;
-    color: #E5ABF1;
+    color: #e5abf1;
+    display: flex;
+    algin-items: center;
+    justify-content: center;
 }
 
 #messageRemove {
     background-color: #A51D2D;
     color: #ffffff;
+    margin-left: 20px;
 }

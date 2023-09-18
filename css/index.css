@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+
 body {
     background-color: #505050;
     color: lightgrey;
@@ -31,47 +31,54 @@ ul {
     color: #e5abf1;
 }
 
-.experienceList {
+/* .experienceListParent { */
+/*     font-size:18px; */
+/* } */
+
+/* .experienceListChild { */
+/*     display: flex; */
+/*     flex-wrap: wrap; */
+/*     list-style-type: none; */
+/*     margin: 5px; */
+/*     padding: 0; */
+/*     height: 100px; */
+/* } */
+
+/* .experienceListChild li { */
+/*      width: 23%; */
+/*     height: 48px; */
+/*     margin: 1px 1%; */
+/*     text-align: center; */
+/*     background-color: #2c2c36; */
+/*     color: #e5abf1; */
+/*     display: flex; */
+/*     algin-items: center; */
+/*     justify-content: center; */
+/* } */
+
+.skillsListParent {
+    font-size: 18px;
+}
+
+.skillsListChild {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    height: 100px;
+}
+
+.skillsListChild li {
+    width: 23%;
+    height: 48px;
+    margin: 1px 1%;
+    text-align: center;
     background-color: #2c2c36;
-    color: #E5ABF1;
-}
-
-
-.skillsList {
-    background-color: #2c2c36;
-    color: #E5ABF1;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-  
-}
-
- .skillOne {
-     grid-column: 1 / 3;
-     grid-row: 1:
-    
-    
-}
-
-.skillTwo {
-     grid-column: 2 / 4;
-     grid-row: 1 / 3;
-    
-
-    
-}
-
-.skillsList .skillThree {
-    grid-column: 1;
-    grid-row: 2 / 5;
-    
-}
-
-.skillsList .skillFour {
-    grid-column: 3;
-    grid-row: 3;
+    color: #e5abf1;
+    display: flex;
+    algin-items: center;
+    justify-content: center;
 }
 
 
@@ -79,6 +86,9 @@ ul {
 .connectList {
     background-color: #2c2c36;
     color: #e5abf1;
+}
+.connectList a {
+    color: #f9f06b;
 }
 
 .guestInput {
@@ -120,6 +130,7 @@ footer {
     width: 15%;
 }
 
+@media (min-width: 720px) {
 .navigationBar {
     display: flex;
 }
@@ -127,6 +138,10 @@ footer {
 .navigationBar div {
     background: #613583;
     color: #f9f06b;
+}
+
+.navigationBar a {
+    color: #f9f06b
 }
 
 .navigationBar .aboutLink {
@@ -154,3 +169,101 @@ footer {
     margin-right: 20px;
 }
 
+.navigationBar .projectsLink {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+
+@media (max-width: 719px) {
+    .navigationBar {
+    display: flex;
+}
+
+.navigationBar div {
+    background: #613583;
+    color: #f9f06b;
+}
+
+.navigationBar a {
+    color: #f9f06b
+}
+
+.navigationBar .aboutLink {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.navigationBar .experienceLink {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navigationBar .skillsLink {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navigationBar .connectLink {
+    margin-left: 10x;
+    margin-right: 10px;
+}
+
+.navigationBar .messagesLink {
+    margin-left: 10x;
+    margin-right: 10px;
+}
+
+.navigationBar .projectsLink {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.experienceListParent {
+    font-size:18px;
+}
+
+.experienceListChild {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    height: 100px;
+}
+
+.experienceListChild li {
+     width: 23%;
+    height: 48px;
+    margin: 1px 1%;
+    text-align: center;
+    background-color: #2c2c36;
+    color: #e5abf1;
+    display: flex;
+    algin-items: center;
+    justify-content: center;
+}
+}
+
+@media (max-width: 560px) {
+    .navigationBar {
+	display: grid;
+    }
+
+    .experienceListChild {
+	display: grid;
+    }
+
+    .skillsListChild {
+	display: grid;
+    }
+
+}
+    
+    
+
+.projects {
+    background-color: #2c2c36;
+    color: #e5abf1;
+
+}
