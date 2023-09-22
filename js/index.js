@@ -80,7 +80,7 @@ fetch("https://api.github.com/users/critakara/repos", {mode: 'cors'})
 	for(let i = 0; i < repositories.length; i++) {
 	    var project = document.createElement('li');
 	
-	    project.innerHTML = repositories[i].name;
+	    project.innerHTML = '<a href="mailto:' +  repositories[i].html_url +  '">' + repositories[i].name + '</a>';
 	    projectList.appendChild(project);
 	}
 

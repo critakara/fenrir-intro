@@ -96,6 +96,7 @@ ul {
 }
 
 input[name="usersName"] {
+    display: grid;
     background: #2c2c36;
     color: #e5abf1;
     margin-right: 30px;
@@ -106,6 +107,7 @@ input[name="usersName"] {
 }
 
 input[name="usersEmail"] {
+    display: grid;
     background: #2c2c36;
     color: #e5abf1;
     margin-top: 20px;
@@ -113,6 +115,7 @@ input[name="usersEmail"] {
 }
 
 textarea[name="usersMessage"] {
+    display: grid;
     background: #2c2c36;
     color: #e5abf1;
     margin-top: 20px;
@@ -186,7 +189,7 @@ footer {
 }
 
 .navigationBar a {
-    color: #f9f06b
+    color: #f9f06b;
 }
 
 .navigationBar .aboutLink {
@@ -265,5 +268,8 @@ footer {
 .projects {
     background-color: #2c2c36;
     color: #e5abf1;
-
+    
 }
+
+.projects a {
+    color: #f9f06b;
