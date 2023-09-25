@@ -1,5 +1,5 @@
 .messageListParent {
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 .messageListChild {
@@ -8,11 +8,11 @@
     list-style-type: none;
     margin: 5px;
     padding: 0;
-    height: 100px;
+    height: 95%;
 }
 
 .messageListChild li {
-    width: 23%;
+    width: 90%;
     height: 48px;
     margin: 1px 1%;
     text-align: center;
@@ -27,4 +27,7 @@
     background-color: #A51D2D;
     color: #ffffff;
     margin-left: 20px;
+    height: 3vh;
+    width: 25%;
+    font-size: 1.5em;
 }

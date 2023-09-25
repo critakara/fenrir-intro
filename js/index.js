@@ -83,6 +83,9 @@ fetch("https://api.github.com/users/critakara/repos", {mode: 'cors'})
 	    project.innerHTML = '<a href="' +  repositories[i].html_url +  '">' + repositories[i].name + '</a>';
 	    projectList.appendChild(project);
 	}
+    });
+
+	// add styling on the api call
 
 	let head = document.querySelector('head');
     let css = document.createElement('link');
@@ -91,8 +94,6 @@ fetch("https://api.github.com/users/critakara/repos", {mode: 'cors'})
     css.href = 'css/index.css';
 
     head.appendChild(css);
-    });
-   
 	
 
 
